@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/src/background-military.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 25px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 120px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a.active-nav {
+    background-color: #4a4a4a;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    color: #a0d2eb;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 10px 50px 40px 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #064908;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-link:hover,
+.button-link:focus {
+    background-color: #33691e;
+    outline: none;
+    transform: translateY(-5px);
+}
+
+.button-link:active {
+    background-color: #2c6b1f;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    z-index: 10;
+}
+
+footer p {
+    margin: 0;
+}

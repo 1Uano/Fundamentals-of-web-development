@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Приєднатися - 7-й Армійський Корпус</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="src/logo_notext_big.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="style/join.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img
+                    src="src/logo_text_big.svg"
+                    alt="Логотип Корпусу"
+                    class="logo"
+                />
+                <h1>7-й Армійський Корпус</h1>
+                <nav>
+                    <a href="index.html">Головна</a>
+                    <a href="structure.html">Структура</a>
+                    <a href="join.html" class="active-nav">Приєднатися</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h2>Приєднатися до 7-го Армійського Корпусу</h2>
+
+            <h3>Переваги Служби в Корпусі:</h3>
+            <ul class="benefits">
+                <li>Служба в елітному, добре оснащеному підрозділі.</li>
+                <li>Професійна підготовка за стандартами НАТО.</li>
+                <li>Можливість кар'єрного зростання.</li>
+                <li>Гідне грошове забезпечення та соціальний пакет.</li>
+                <li>Сучасне озброєння та техніка.</li>
+                <li>Повага та підтримка бойових побратимів.</li>
+            </ul>
+
+            <h3>Вимоги до Кандидатів:</h3>
+            <ul class="requirements">
+                <li>Громадянство України.</li>
+                <li>Вік від 18 до 55 років (для мобілізації та контракту).</li>
+                <li>
+                    Придатність до військової служби за станом здоров'я
+                    (визначається за ВЛК).
+                </li>
+                <li>Висока мотивація та бажання захищати Україну.</li>
+                <li>
+                    Відповідний рівень фізичної підготовки (визначається за
+                    тестовим тижднем).
+                </li>
+            </ul>
+
+            <div class="application-form">
+                <h3>Подати Заявку Онлайн:</h3>
+                <p>
+                    Заповніть форму нижче, щоб висловити свою зацікавленість.
+                    <br />Наш представник зв'яжеться з вами найближчим часом.
+                </p>
+                <form id="join-form" name="joinForm">
+                    <fieldset>
+                        <legend>
+                            Форма приєднання до 7-го Армійського Корпусу
+                        </legend>
+
+                        <p>
+                            <label for="last_name">Прізвище:</label><br />
+                            <input
+                                type="text"
+                                id="last_name"
+                                name="last_name"
+                                placeholder="Введіть прізвище"
+                                required
+                            />
+                        </p>
+
+                        <p>
+                            <label for="first_name">Ім'я:</label><br />
+                            <input
+                                type="text"
+                                id="first_name"
+                                name="first_name"
+                                placeholder="Введіть ім'я"
+                                required
+                            />
+                        </p>
+
+                        <p>
+                            <label for="phone">Номер телефону:</label><br />
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+380 XX XXX XX XX"
+                                required
+                            />
+                        </p>
+
+                        <p>
+                            <label for="email">Електронна пошта:</label><br />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                            />
+                        </p>
+
+                        <p>
+                            Військовий статус:<br />
+                            <input
+                                type="radio"
+                                id="military_yes"
+                                name="is_military"
+                                value="yes"
+                            />
+                            <label for="military_yes"
+                                >Я є діючим військовослужбовцем</label
+                            ><br />
+                            <input
+                                type="radio"
+                                id="military_no"
+                                name="is_military"
+                                value="no"
+                            />
+                            <label for="military_no"
+                                >Не є військовослужбовцем</label
+                            >
+                        </p>
+
+                        <p>
+                            <label for="position">Бажана посада:</label><br />
+                            <select id="position" name="position" required>
+                                <option value="">-- Оберіть посаду --</option>
+                                <option value="driver">Водій</option>
+                                <option value="mechanic_driver">
+                                    Механік-водій
+                                </option>
+                                <option value="combat_medic">
+                                    Бойовий медик
+                                </option>
+                                <option value="signalman">Зв'язківець</option>
+                                <option value="sniper">Снайпер</option>
+                                <option value="artilleryman">Артилерист</option>
+                                <option value="uav_operator">
+                                    Оператор БПЛА
+                                </option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="about">Додаткова інформація:</label
+                            ><br />
+                            <textarea
+                                id="about"
+                                name="about"
+                                rows="4"
+                                cols="40"
+                                placeholder="Ваші навички, досвід, побажання..."
+                            ></textarea>
+                        </p>
+
+                        <p>
+                            <button
+                                type="submit"
+                                name="submitButton"
+                                id="submitButton"
+                            >
+                                Відправити заявку
+                            </button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+
+            <p class="phrase">
+                <strong
+                    ><br />Не чекайте — долучайтеся до лав переможців! Зробіть
+                    свій внесок у захист України разом із 7-м Армійським
+                    Корпусом!</strong
+                >
+            </p>
+
+            <div class="button-container" style="margin-top: 30px">
+                <a href="structure.html" class="submit-button"
+                    >Переглянути вакансії</a
+                >
+            </div>
+        </main>
+
+        <footer>© 2025 7-й Армійський Корпус. Всі права захищено.</footer>
+
+        <script>
+            document
+                .getElementById('join-form')
+                .addEventListener('submit', async function (e) {
+                    e.preventDefault(); 
+
+                    const formData = new FormData(this);
+                    const data = Object.fromEntries(formData.entries());
+
+                    const res = await fetch('/register', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data),
+                    });
+
+                    alert(await res.text());
+                });
+        </script>
+    </body>
+</html>
